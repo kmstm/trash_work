@@ -13,4 +13,4 @@ st.write("주제:", subject)
 if st.button("시 생성하기"):
     with st.spinner("시를 생성하는 중..."):
         result = chat_model.invoke(subject + "에 대한 시를 써줘.") 
-        st.write("생성된 시:"+ result)
+        st.write("생성된 시:"+ result.content)
